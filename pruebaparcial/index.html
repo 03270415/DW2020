@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Productos</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <script src="libs/jquery/jquery.min.js" charset="utf-8"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Productos</a>
+    </nav>
+    <br>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-center" class="card-title">Formulario</h2>
+          <form class="" action="index.html" method="post">
+            <input type="hidden" id="idx" value="">
+            <p>
+              <label for="nombre">Nombre</label> <br>
+              <input type="text" id="nombre" class="form-control" value="">
+            </p>
+            <p>
+              <label for="cantidad">Cantidad</label><br>
+              <input type="number" id="cantidad" value=""  class="form-control" >
+            </p>
+            <p>
+              <label for="fdv">Fecha de vencimiento</label><br>
+              <input type="date" id="fdn" value=""  class="form-control" >
+            </p>
+            <p>
+              <label for="fabricante">Fabricante</label> <br>
+              <input type="text" id="fabricante" class="form-control" value="">
+            </p>
+            <button type="button" id="enviar"  class="btn btn-outline-primary" >Enviar</button>
+            <button type="button" id="limpiar"  class="btBorrar btn-outline-info" >Limpiar</button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-center"class="card-title">Datos</h2>
+          <div class="table-responsive-lg">
+            <table class="table table-bordered table-dark">
+              <tr>
+                <th  class="text-center">ID</th>
+                <th  class="text-center">Nombre</th>
+                <th  class="text-center">Cantidad</th>
+                <th  class="text-center">Fecha de vencimiento</th>
+                <th  class="text-center">Fabricante</th>
+                <th  class="text-center" colspan="2"><button type="button" id="nuevo" onclick="limpiarForm()" class="btn btn-outline-primary">Nuevo</button></th>
+              </tr>
+            </thead>
+            <tbody id="datos">
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <br>
+      <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
